@@ -1,6 +1,15 @@
 @import 'tailwindcss';
 
 @font-face {
+	font-family: 'Rubik Mono One';
+	src: url('./assets/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf')
+		format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: 'IBM Plex Sans';
 	src: url('./assets/fonts/ibm-plex-sans/IBMPlexSans-VariableFont_wdth,wght.ttf')
 		format('truetype');
@@ -41,6 +50,7 @@
 	--font-sans: 'IBM Plex Sans', sans-serif;
 	--font-display: 'Barlow Condensed', sans-serif;
 	--font-anton: 'Anton', sans-serif;
+	--font-heading: 'Rubik Mono One', sans-serif;
 	--color-page-bg: #f3f4ee;
 	--color-surface: #f3f4eeee;
 	--color-surface-alt: #f3f4ee;
