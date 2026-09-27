@@ -1,28 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
 @import 'tailwindcss';
 
+@font-face {
+	font-family: 'IBM Plex Sans';
+	src: url('./assets/fonts/ibm-plex-sans/IBMPlexSans-VariableFont_wdth,wght.ttf')
+		format('truetype');
+	font-style: normal;
+	font-weight: 100 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Anton';
+	src: url('./assets/fonts/Anton/Anton-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Barlow Condensed';
+	src: url('./assets/fonts/barlow-condensed/BarlowCondensed-SemiBold.ttf')
+		format('truetype');
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Barlow Condensed';
+	src: url('./assets/fonts/barlow-condensed/BarlowCondensed-Bold.ttf')
+		format('truetype');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* Tailwind CSS v4 directive; not a standard CSS at-rule. */
+/* stylelint-disable-next-line at-rule-no-unknown */
 @theme {
-  --font-sans: 'DM Sans', sans-serif;
-  --font-display: 'Barlow Condensed', sans-serif;
-  --color-ink: #19231e;
-  --color-paper: #f3f4ee;
-  --color-rust: #c64f32;
+	--font-sans: 'IBM Plex Sans', sans-serif;
+	--font-display: 'Barlow Condensed', sans-serif;
+	--font-anton: 'Anton', sans-serif;
+	--color-page-bg: #f3f4ee;
+	--color-surface: #f3f4eeee;
+	--color-surface-alt: #f3f4ee;
+	--color-surface-text: #19231e;
+	--color-surface-border: rgba(25, 35, 30, 0.25);
+	--color-primary: #19231e;
+	--color-secondary: #c64f32;
+	--color-accent: #c64f32;
+	--color-highlight: #c64f32;
 }
 
 :root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
-  margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	background: var(--color-page-bg);
+	color: var(--color-primary);
+}
+
+.hero-image {
+	filter: saturate(0.9) contrast(1.06);
+}
+
+#app:has(> dialog[open]) > main > section[aria-labelledby='brand-title'] {
+	opacity: 0;
 }
 
 ::selection {
-  color: var(--color-paper);
-  background: var(--color-rust);
+	color: var(--color-surface-alt);
+	background: var(--color-primary);
 }

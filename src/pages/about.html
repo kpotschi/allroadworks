@@ -1,0 +1,73 @@
+<dialog
+	id="about-me"
+	data-page-dialog
+	class="m-auto max-h-[calc(100%-2rem)] w-[calc(100%-2rem)] max-w-2xl overflow-y-auto rounded-lg border border-surface-border bg-surface p-0 font-sans text-surface-text shadow-2xl backdrop:bg-primary/75"
+>
+	<article class="p-6 sm:p-10">
+		<header class="mb-8 flex items-start justify-between gap-6">
+			<div>
+				<div class="mb-4 h-1 w-12 bg-highlight" aria-hidden="true"></div>
+				<p
+					class="text-xs font-semibold uppercase tracking-normal text-surface-text/70"
+				>
+					ALLROADWORKS
+				</p>
+				<h2 class="mt-2 font-anton text-5xl leading-none">About Me</h2>
+			</div>
+			<button
+				class="inline-flex size-11 shrink-0 items-center justify-center border border-surface-border hover:bg-primary hover:text-surface-alt focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+				type="button"
+				data-close-page
+				aria-label="Close About Me"
+			>
+				<svg
+					class="size-5"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					aria-hidden="true"
+				>
+					<path d="m18 6-12 12M6 6l12 12" />
+				</svg>
+			</button>
+		</header>
+		<div
+			class="grid gap-6 sm:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] sm:items-start"
+		>
+			<img
+				class="aspect-[4/5] w-full object-cover object-top"
+				src="__KEVIN_PHOTO__"
+				alt="Portrait of Kevin"
+			/>
+			<div class="space-y-4 text-base leading-relaxed sm:text-lg">
+				<p>
+					My name is Kevin Potschien, and I am a strength coach for cyclists. I
+					help riders build the strength and endurance they need to perform at
+					their best on the bike.
+				</p>
+				<p>
+					Based on years of experience as a strength coach, I helped a lot of
+					clients achieve their goals in the gym. Finding my niche in targeted
+					strength training for cyclists brings together two of my passions in a
+					special way.
+				</p>
+				<p>
+					My approach looks beyond numbers on a training plan. Good training has
+					to fit the athlete, their goals, and their schedule. I'm a licensed
+					fitness coach and an amateur gravel racer with the Q36.5 Racing
+					Experience Germany team.
+				</p>
+			</div>
+		</div>
+		<a
+			class="mt-8 inline-flex min-h-12 items-center bg-primary px-6 font-semibold uppercase text-surface-alt transition-colors hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+			href="https://calendly.com/kpotschien/arw-intro-call"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Book an intro call
+		</a>
+	</article>
+</dialog>
