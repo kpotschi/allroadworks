@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  // Config options go here
+  plugins: [tailwindcss()],
   server: {
     port: 3000,
-  }, 
-   base: '/',
+  },
+  base: '/',
 })
