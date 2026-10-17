@@ -27,3 +27,9 @@ IBM Plex Sans is used for body text; Barlow Condensed is used for headings. Requ
 Home, About Me, and Pricing markup live in `src/pages/home.html`, `src/pages/about.html`, and `src/pages/pricing.html`. The pages are assembled by `src/main.ts`; dialog routing lives in `src/dialog-navigation.ts`.
 
 About Me and Pricing open as hash-addressable overlays (`#about-me` and `#pricing`). The current Lorem ipsum and `Price: add rate` text are placeholders.
+
+## Search and AI crawlers
+
+`public/robots.txt` allows crawlers to access the site and points them to
+`https://allroadworks.com/sitemap.xml`. The sitemap lists the homepage; About Me
+and Pricing are overlays on that page rather than separate URLs.
