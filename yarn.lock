@@ -33,6 +33,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource-variable/archivo@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource-variable/archivo@npm:5.3.0"
+  checksum: 10c0/3af011f6ee09716625424c518bc9c4da93aa0989fc09904398451a125ef738d82af7d74569e195082dac6fc1df1c3a4aeba5d6d85f1a652245d001ed3aaf0c8c
+  languageName: node
+  linkType: hard
+
 "@isaacs/fs-minipass@npm:^4.0.0":
   version: 4.0.1
   resolution: "@isaacs/fs-minipass@npm:4.0.1"
@@ -401,6 +408,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "allroadworks@workspace:."
   dependencies:
+    "@fontsource-variable/archivo": "npm:^5.3.0"
     "@tailwindcss/vite": "npm:^4.3.3"
     tailwindcss: "npm:^4.3.3"
     typescript: "npm:~6.0.2"

@@ -1,65 +1,28 @@
 @import 'tailwindcss';
 
-@font-face {
-	font-family: 'Rubik Mono One';
-	src: url('./assets/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf')
-		format('truetype');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'IBM Plex Sans';
-	src: url('./assets/fonts/ibm-plex-sans/IBMPlexSans-VariableFont_wdth,wght.ttf')
-		format('truetype');
-	font-style: normal;
-	font-weight: 100 700;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Anton';
-	src: url('./assets/fonts/Anton/Anton-Regular.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Barlow Condensed';
-	src: url('./assets/fonts/barlow-condensed/BarlowCondensed-SemiBold.ttf')
-		format('truetype');
-	font-style: normal;
-	font-weight: 600;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Barlow Condensed';
-	src: url('./assets/fonts/barlow-condensed/BarlowCondensed-Bold.ttf')
-		format('truetype');
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-}
-
 /* Tailwind CSS v4 directive; not a standard CSS at-rule. */
 /* stylelint-disable-next-line at-rule-no-unknown */
 @theme {
-	--font-sans: 'IBM Plex Sans', sans-serif;
-	--font-display: 'Barlow Condensed', sans-serif;
-	--font-anton: 'Anton', sans-serif;
-	--font-heading: 'Rubik Mono One', sans-serif;
-	--color-page-bg: #f3f4ee;
-	--color-surface: #f3f4eeee;
-	--color-surface-alt: #f3f4ee;
-	--color-surface-text: #19231e;
-	--color-surface-border: rgba(25, 35, 30, 0.25);
-	--color-primary: #19231e;
-	--color-secondary: #c64f32;
-	--color-accent: #c64f32;
-	--color-highlight: #c64f32;
+	/* Archivo (variable: wght + wdth). Loaded via @fontsource-variable/archivo in main.ts. */
+	--font-sans: 'Archivo Variable', 'Archivo', sans-serif;
+
+	/* Brand palette — Allroad Works style tile */
+	--color-graphite: #282b28;
+	--color-chalk: #f6f4ed;
+	--color-granite: #4f5c40;
+	--color-sage: #83bca9; /* decorative only: 2:1 on chalk */
+	--color-paprika: #d36135; /* large text / decoration only: 3.45:1 on chalk */
+
+	/* Semantic tokens */
+	--color-page-bg: var(--color-chalk);
+	--color-surface: rgb(246 244 237 / 0.93);
+	--color-surface-alt: var(--color-chalk);
+	--color-surface-text: var(--color-graphite);
+	--color-surface-border: rgb(40 43 40 / 0.25);
+	--color-primary: var(--color-graphite);
+	--color-secondary: var(--color-granite);
+	--color-accent: var(--color-paprika);
+	--color-highlight: var(--color-paprika);
 }
 
 :root {

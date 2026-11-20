@@ -3,12 +3,12 @@
 >
 	<img
 		class="hero-image absolute inset-0 -z-10 h-full w-full object-cover object-left"
-		src="__HERO_IMAGE__"
+		src="/src/assets/hero.webp"
 		alt=""
 		fetchpriority="high"
 	/>
 	<div
-		class="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(12,24,20,0.2),transparent_75%)]"
+		class="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(40,43,40,0.2),transparent_75%)]"
 		aria-hidden="true"
 	></div>
 
@@ -21,7 +21,7 @@
 			href="https://www.instagram.com/allroadworks/"
 			target="_blank"
 			rel="noopener noreferrer"
-			aria-label="Visit ALLROADWORKS on Instagram"
+			aria-label="Visit Allroad Works on Instagram"
 			title="Instagram: @allroadworks"
 		>
 			<svg
@@ -42,7 +42,7 @@
 		<a
 			class="inline-flex size-12 items-center justify-center rounded-full bg-surface-alt text-primary shadow-lg transition-colors hover:bg-primary hover:text-surface-alt focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-surface-alt"
 			href="mailto:coach@allroadworks.com"
-			aria-label="Email ALLROADWORKS"
+			aria-label="Email Allroad Works"
 			title="Email coach@allroadworks.com"
 		>
 			<svg
@@ -62,25 +62,25 @@
 	</nav>
 
 	<section
-		class="relative flex min-h-dvh justify-center p-5 items-start transition-opacity duration-200 motion-reduce:transition-none md:justify-start md:p-10 lg:p-16"
+		class="relative flex min-h-dvh justify-center p-5 pb-24 items-start transition-opacity duration-200 motion-reduce:transition-none md:justify-start md:p-10 lg:p-16"
 		aria-labelledby="brand-title"
 	>
 		<div
 			class="w-full max-w-2xl rounded-lg border border-surface-border bg-surface px-6 py-7 text-surface-text shadow-2xl sm:px-9 sm:py-9"
 		>
-			<div class="mb-5 h-1 w-12 bg-highlight" aria-hidden="true"></div>
 			<h1
 				id="brand-title"
-				class="font-heading text-[1.75rem] leading-[0.9] tracking-normal min-[390px]:text-[2rem] min-[440px]:text-[2.25rem] sm:text-5xl lg:text-6xl"
+				class="w-56 min-[390px]:w-64 sm:w-80 lg:w-96 [&>svg]:block [&>svg]:h-auto [&>svg]:w-full"
 			>
-				ALLROADWORKS
+				<span class="sr-only">Allroad Works</span>
+				<!-- include:src/assets/brand/logo-full.svg -->
 			</h1>
 			<h2
-				class="mt-5 max-w-lg text-xl font-bold leading-tight tracking-normal sm:text-2xl lg:text-3xl"
+				class="mt-6 max-w-lg text-xl font-bold leading-tight tracking-normal font-stretch-semi-expanded sm:text-2xl lg:text-3xl"
 			>
 				Strength Coaching for Cyclists
 			</h2>
-			<hr class="my-6 border-panel-border/40" />
+			<hr class="my-6 border-surface-border" />
 			<p class="max-w-xl text-base leading-relaxed sm:text-lg">
 				Individual strength coaching designed around your goals and your
 				schedule. Build strength and fatigue resistance to ride harder for
@@ -113,6 +113,13 @@
 				>
 					Book an intro call
 				</a>
+			</nav>
+			<nav
+				class="mt-8 flex gap-4 border-t border-surface-border pt-4 text-xs text-surface-text/75"
+				aria-label="Legal"
+			>
+				<a class="underline-offset-4 hover:text-secondary hover:underline" href="#imprint">Imprint</a>
+				<a class="underline-offset-4 hover:text-secondary hover:underline" href="#privacy">Privacy Policy</a>
 			</nav>
 		</div>
 	</section>
